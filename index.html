@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms</h1>
+            <p></p>
+            <div class="button-container">
+                <a href="https://github.com/LuckyMS/TRAMBA" class="btn">Code</a>
+                <a href="https://arxiv.org/abs/2405.01242" class="btn">Paper</a>
+            </div>
+        </header>
+
+        <section class="abstract-section">
+            <h2>Abstract</h2>
+            <p>
+                We present an audio super-resolution model that processes speech and music signals using neural networks. The model is optimized with both time and frequency domain loss functions. We explore different reconstruction strategies that consider a range of perceptual and adversarial losses. Our approach focuses on enhancing both low and high-frequency audio signals to produce high-quality outputs. The results show improvements in speech and music quality across various tasks.
+            </p>
+        </section>
+
+
+        <section class="audio-section">
+            <h2>Example 1: IMU Signal</h2>
+
+            <div class="audio-container">
+                <div class="audio-item">
+                    <h3>Low-resolution IMU Signal</h3>
+                    <audio controls>
+                        <source src="audio1/low_res_imu1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>Ground Truth</h3>
+                    <audio controls>
+                        <source src="audio1/ground_truth_imu1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TFiLM</h3>
+                    <audio controls>
+                        <source src="audio1/TFiLM_imu1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TRAMBA</h3>
+                    <audio controls>
+                        <source src="audio1/our_model_imu1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <h2>Example 2: IMU Signal</h2>
+
+            <div class="audio-container">
+                <div class="audio-item">
+                    <h3>Low-resolution IMU Signal</h3>
+                    <audio controls>
+                        <source src="audio1/low_res_imu2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>Ground Truth</h3>
+                    <audio controls>
+                        <source src="audio1/ground_truth_imu2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TFiLM</h3>
+                    <audio controls>
+                        <source src="audio1/TFiLM_imu2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TRAMBA</h3>
+                    <audio controls>
+                        <source src="audio1/our_model_imu2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <h2>Example 3: BCM Signal</h2>
+
+            <div class="audio-container">
+                <div class="audio-item">
+                    <h3>Low-resolution BCM Signal</h3>
+                    <audio controls>
+                        <source src="audio1/low_res_bcm1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>Ground Truth</h3>
+                    <audio controls>
+                        <source src="audio1/ground_truth_bcm1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TFiLM</h3>
+                    <audio controls>
+                        <source src="audio1/TFiLM_bcm1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TRAMBA</h3>
+                    <audio controls>
+                        <source src="audio1/our_model_bcm1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <h2>Example 4: BCM Signal</h2>
+
+            <div class="audio-container">
+                <div class="audio-item">
+                    <h3>Low-resolution BCM Signal</h3>
+                    <audio controls>
+                        <source src="audio1/low_res_bcm2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>Ground Truth</h3>
+                    <audio controls>
+                        <source src="audio1/ground_truth_bcm2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TFiLM</h3>
+                    <audio controls>
+                        <source src="audio1/TFiLM_bcm2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-item">
+                    <h3>TRAMBA</h3>
+                    <audio controls>
+                        <source src="audio1/our_model_bcm2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+
+</body>
+</html>
